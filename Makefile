@@ -6,7 +6,7 @@
 #    By: morgani <morgani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/08 09:11:52 by morgani           #+#    #+#              #
-#    Updated: 2018/12/07 11:56:20 by morgani          ###   ########.fr        #
+#    Updated: 2019/01/11 18:20:43 by morgani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -86,7 +86,8 @@ SRC =	ft_memset.c					\
 		ft_sort_integer_table.c		\
 		get_next_line.c				\
 		ft_strjoin_free.c			\
-		ft_cnt_rtrn.c
+		ft_cnt_rtrn.c				\
+		ft_natoi.c
 
 OBJ = $(SRC:.c=.o)
 

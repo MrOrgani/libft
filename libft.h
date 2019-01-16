@@ -6,7 +6,7 @@
 /*   By: morgani <morgani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 08:01:58 by morgani           #+#    #+#             */
-/*   Updated: 2018/12/07 18:13:13 by morgani          ###   ########.fr       */
+/*   Updated: 2019/01/11 18:15:37 by morgani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,5 +103,6 @@ void				ft_sort_integer_table(int *tab, int size, int order);
 int					ft_cnt_rtrn(char *str, char c);
 int					get_next_line(const int fd, char **line);
 char				*ft_strjoin_free(char *line, char *tmp, int len);
+int					ft_natoi(char *s, int n);
 
 #endif
