@@ -3,16 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: morgani <morgani@student.42.fr>            +#+  +:+       +#+         #
+#    By: vlecoq-v <vlecoq-v@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/08 09:11:52 by morgani           #+#    #+#              #
-#    Updated: 2019/01/11 18:20:43 by morgani          ###   ########.fr        #
+#    Updated: 2019/01/16 11:04:36 by vlecoq-v         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 CC = gcc
+AR = ar rc
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -90,18 +91,25 @@ SRC =	ft_memset.c					\
 		ft_natoi.c
 
 OBJ = $(SRC:.c=.o)
+PATH_OBJ = ./
+PATH_SRC = ./
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+	@$(AR) $(NAME) $(OBJ)
+	@ ranlib $(NAME)
+	@ echo "---------------> LIBFT PRETE <---------------"
+
+$(PATH_OBJ)%.o: $(PATH_SRC)%.c
+	@$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
-	rm -f $(OBJ)
+	@ rm -f $(OBJ)
+	@ echo "---------------> LIBFT RANGEE(.O) <---------------"
 
 fclean: clean
-	rm -f $(NAME)
+	@ rm -f $(NAME)
 
 re: fclean all
 
