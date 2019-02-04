@@ -6,7 +6,7 @@
 #    By: vlecoq-v <vlecoq-v@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/08 09:11:52 by morgani           #+#    #+#              #
-#    Updated: 2019/01/16 11:04:36 by vlecoq-v         ###   ########.fr        #
+#    Updated: 2019/02/04 17:09:32 by vlecoq-v         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -88,7 +88,8 @@ SRC =	ft_memset.c					\
 		get_next_line.c				\
 		ft_strjoin_free.c			\
 		ft_cnt_rtrn.c				\
-		ft_natoi.c
+		ft_natoi.c					\
+		ft_pwr.c
 
 OBJ = $(SRC:.c=.o)
 PATH_OBJ = ./
