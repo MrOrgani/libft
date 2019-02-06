@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_pwr.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vlecoq-v <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vlecoq-v <vlecoq-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 17:05:30 by vlecoq-v          #+#    #+#             */
-/*   Updated: 2019/02/04 17:12:53 by vlecoq-v         ###   ########.fr       */
+/*   Updated: 2019/02/05 19:12:06 by vlecoq-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,6 @@
 /*
   // on ne calcule pas les pwr > 17 car cela depasse le int max
 */
-
-long long static ft_abs_ll(long long n)
-{
-	return (n < 0 ? -n : n);
-}
 
 long long	ft_pwr(long long n, size_t pwr)
 {
@@ -30,7 +25,7 @@ long long	ft_pwr(long long n, size_t pwr)
 		return (1);
 	while (pwr--)
 	{
-		if (ft_abs_ll(n) * ft_abs_ll(tmp) < ft_abs_ll(n))
+		if (ft_abs(n) * ft_abs(tmp) < ft_abs(n))
 			return (0);
 		n = n * tmp;
 	}

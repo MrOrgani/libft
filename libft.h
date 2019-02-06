@@ -91,7 +91,7 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_printlist(t_list *list);
 int					ft_ispositive(int n);
-int					ft_abs(int n);
+long long			ft_abs(long long n);
 void				ft_strrev(char *s);
 void				ft_lstaddend(t_list **alst, t_list *new);
 int					ft_lstlen(t_list **alst);
