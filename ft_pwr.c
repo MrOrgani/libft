@@ -6,15 +6,11 @@
 /*   By: vlecoq-v <vlecoq-v@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/04 17:05:30 by vlecoq-v          #+#    #+#             */
-/*   Updated: 2019/02/05 19:12:06 by vlecoq-v         ###   ########.fr       */
+/*   Updated: 2019/02/13 15:18:08 by vlecoq-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-  // on ne calcule pas les pwr > 17 car cela depasse le int max
-*/
 
 long long	ft_pwr(long long n, size_t pwr)
 {
@@ -29,5 +25,5 @@ long long	ft_pwr(long long n, size_t pwr)
 			return (0);
 		n = n * tmp;
 	}
-	return (n);	
+	return (n);
 }
